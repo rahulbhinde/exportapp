@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Saved on Sun Apr 30 15:56:03 IST 2017</comment>
+<entry key="db.password">@050233E3AC8654177CEDC55504F9D3B9A3</entry>
+<entry key="db.username">APEX_REST_PUBLIC_USER</entry>
+</properties>
