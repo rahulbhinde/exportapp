@@ -1,0 +1,24 @@
+prompt --application/shared_components/logic/application_items/app_color_enq_aw
+begin
+--   Manifest
+--     APPLICATION ITEM: APP_COLOR_ENQ_AW
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.15'
+,p_default_workspace_id=>7965342552622829
+,p_default_application_id=>200
+,p_default_id_offset=>32162224829641601
+,p_default_owner=>'SAARTHIDEV'
+);
+wwv_flow_imp_shared.create_flow_item(
+ p_id=>wwv_flow_imp.id(29815020306409455)
+,p_name=>'APP_COLOR_ENQ_AW'
+,p_protection_level=>'I'
+,p_escape_on_http_output=>'N'
+,p_item_comment=>'ENQUIRY_STATUS	Awaiting Approval'
+,p_version_scn=>350683219
+);
+wwv_flow_imp.component_end;
+end;
+/
