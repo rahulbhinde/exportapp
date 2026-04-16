@@ -1,0 +1,502 @@
+prompt --application/pages/page_00031
+begin
+--   Manifest
+--     PAGE: 00031
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.15'
+,p_default_workspace_id=>7965342552622829
+,p_default_application_id=>200
+,p_default_id_offset=>32162224829641601
+,p_default_owner=>'SAARTHIDEV'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>31
+,p_name=>'Proforma'
+,p_page_mode=>'MODAL'
+,p_step_title=>'Proforma'
+,p_reload_on_submit=>'A'
+,p_warn_on_unsaved_changes=>'N'
+,p_autocomplete_on_off=>'ON'
+,p_html_page_header=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'<script>',
+'function demoFromHTML() {',
+'    alert(''ranu'');',
+'    var doc = new jsPDF();',
+'    var imgData = ''data:image/jpeg;base64,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'';',
+'',
+'// We''ll make our own renderer to skip this editor',
+'var specialElementHandlers = {',
+'    ''#editor'': function(element, renderer){',
+'        return true;',
+'    }',
+'};',
+'',
+'doc.fromHTML($(''#render_me'').get(0), 15, 15, {',
+'    ''width'': 170, ',
+'    ''elementHandlers'': specialElementHandlers',
+'});',
+'    doc.addImage(imgData, ''JPEG'',  15, 40, 200, 150);',
+'doc.save(''Test.pdf'');',
+'',
+'$(''a'').click(function(){',
+'  doc.save(''TestHTMLDoc.pdf'');',
+'});',
+'    ',
+'}',
+'    ',
+' function generatePDF()',
+'    {',
+' //       $(''#proforma'').tableExport({type:''pdf'',pdfFontSize:''7'',escape:''false''});',
+'        ',
+'           var pdf = new jsPDF(''p'', ''pt'', ''letter'');',
+'',
+'    //Creating the image from chart and adding to the pdf',
+'   /* var img = document.getElementById("graphImg");',
+'    var canvas = document.createElement("canvas");',
+'    canvas.width = img.width;',
+'    canvas.height = img.height;',
+'    var ctx = canvas.getContext("2d");',
+'    ctx.drawImage(img, 0, 0);',
+'  ',
+'        var canvas = document.createElement("canvas");',
+'    var dataURL = canvas.toDataURL("#WORKSPACE_IMAGES#JanuzLogo.jpg");',
+'    pdf.addImage(dataURL, "JPG", 100,20); ',
+'    canvas = null;',
+'  */',
+'    //Adding the html table to the same pdf file ',
+'   /* source = $(''#proforma'')[0];',
+'  ',
+'    margins = {',
+'        top: 300, // Providing high top margin value to make the table below to the image',
+'        bottom: 60,',
+'        left: 80,',
+'        width: 400',
+'    };',
+'    pdf.fromHTML(',
+'    source, ',
+'    margins.left, ',
+'    margins.top, { ',
+'        ''width'': margins.width',
+'    },',
+'',
+'    function (dispose) {',
+'        pdf.save(''Export.pdf'');',
+'    }, margins);',
+'    */',
+'        var dataURL = ''data:image/jpeg;base64,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'';',
+'        ',
+'        ',
+'          /*  var canvas = document.createElement("canvas");',
+'    var dataURL = canvas.toDataURL("#WORKSPACE_IMAGES#JanuzLogo.jpg");*/',
+'    pdf.addImage(dataURL, "JPG",0,0,100,100); ',
+'    canvas = null;',
+'       ',
+'       ',
+'        var source = $(''#customer'')[0];',
+'        ',
+'        pdf.fromHTML(',
+'    source,',
+'    20,',
+'    80,',
+'    {',
+'      ''width'': 180',
+'    });',
+'        ',
+'    ',
+'     /*   var res = pdf.autoTableHtmlToJson(document.getElementById("proforma"));',
+'  pdf.autoTable(res.columns, res.data, {',
+'    startY: 110,',
+'     theme: ''grid'',',
+'   tableWidth: ''wrap'',',
+'        styles: {cellPadding: 2},',
+'        headerStyles: {rowHeight: 15, fontSize: 8},',
+'        bodyStyles: {rowHeight: 12, fontSize: 8, valign: ''middle''}',
+'  });*/',
+'   ',
+'        ',
+'        pdf.save(''Export.pdf'');',
+'}',
+'    ',
+'</script>'))
+,p_javascript_file_urls=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'#APP_IMAGES#jspdf.js',
+'#APP_IMAGES#base64.js',
+'#APP_IMAGES#jquery.base64.js',
+'#APP_IMAGES#sprintf.js',
+'#APP_IMAGES#tableExport.js',
+'#WORKSPACE_IMAGES#html2canvas.js',
+'#WORKSPACE_IMAGES#jspdf.debug.js',
+'#WORKSPACE_IMAGES#png_support.js',
+'#WORKSPACE_IMAGES#standard_fonts_metrics.js',
+'#WORKSPACE_IMAGES#split_text_to_size.js',
+'#WORKSPACE_IMAGES#FileSaver.js',
+'#WORKSPACE_IMAGES#jspdf.plugin.autotable.src.js',
+'#WORKSPACE_IMAGES#png.js',
+'#WORKSPACE_IMAGES#zlib.js'))
+,p_javascript_code=>'var htmldb_delete_message=''"DELETE_CONFIRM_MSG"'';'
+,p_step_template=>2100407606326202693
+,p_page_template_options=>'#DEFAULT#'
+,p_help_text=>'No help is available for this page.'
+,p_page_component_map=>'02'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(163540186449900983)
+,p_plug_name=>'Enquiry Output'
+,p_plug_display_sequence=>10
+,p_query_type=>'TABLE'
+,p_query_table=>'ENQUIRY_OUTPUTS'
+,p_include_rowid_column=>true
+,p_is_editable=>true
+,p_edit_operations=>'u'
+,p_lost_update_check_type=>'VALUES'
+,p_plug_source_type=>'NATIVE_FORM'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'attribute_01', 'N',
+  'attribute_02', 'TEXT',
+  'attribute_03', 'Y')).to_clob
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(163540999368900984)
+,p_plug_name=>'Buttons'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>2126429139436695430
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_03'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'expand_shortcuts', 'N',
+  'output_as', 'TEXT',
+  'show_line_breaks', 'Y')).to_clob
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(163541418627900985)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(163540999368900984)
+,p_button_name=>'CANCEL'
+,p_button_action=>'DEFINED_BY_DA'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4072362960822175091
+,p_button_image_alt=>'Cancel'
+,p_button_position=>'CLOSE'
+,p_button_alignment=>'RIGHT'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(163541862723900985)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_imp.id(163540999368900984)
+,p_button_name=>'DELETE'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4072362960822175091
+,p_button_image_alt=>'Delete'
+,p_button_position=>'DELETE'
+,p_button_alignment=>'RIGHT'
+,p_button_redirect_url=>'javascript:apex.confirm(htmldb_delete_message,''DELETE'');'
+,p_button_execute_validations=>'N'
+,p_button_condition_type=>'NEVER'
+,p_grid_new_row=>'Y'
+,p_grid_new_column=>'Y'
+,p_database_action=>'DELETE'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(163542184600900986)
+,p_button_sequence=>30
+,p_button_plug_id=>wwv_flow_imp.id(163540999368900984)
+,p_button_name=>'SAVE'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4072362960822175091
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Save'
+,p_button_position=>'NEXT'
+,p_button_alignment=>'RIGHT'
+,p_button_condition=>'P31_EO_ID'
+,p_button_condition_type=>'ITEM_IS_NOT_NULL'
+,p_grid_new_row=>'Y'
+,p_grid_new_column=>'Y'
+,p_database_action=>'UPDATE'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(163542617589900986)
+,p_button_sequence=>40
+,p_button_plug_id=>wwv_flow_imp.id(163540999368900984)
+,p_button_name=>'GEN_EXCEL'
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4072362960822175091
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Generate Excel'
+,p_button_position=>'NEXT'
+,p_button_alignment=>'RIGHT'
+,p_button_condition=>'P31_EO_ID'
+,p_button_condition_type=>'ITEM_IS_NULL'
+,p_grid_new_row=>'Y'
+,p_grid_new_column=>'Y'
+,p_database_action=>'INSERT'
+);
+wwv_flow_imp_page.create_page_branch(
+ p_id=>wwv_flow_imp.id(163554119927901051)
+,p_branch_name=>'test'
+,p_branch_action=>'f?p=&APP_ID.:31:&SESSION.:TEST:&DEBUG.:::'
+,p_branch_point=>'AFTER_PROCESSING'
+,p_branch_type=>'REDIRECT_URL'
+,p_branch_when_button_id=>wwv_flow_imp.id(158518824430888725)
+,p_branch_sequence=>10
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(163540625092900984)
+,p_name=>'P31_EO_REMARKS'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_imp.id(163540186449900983)
+,p_item_source_plug_id=>wwv_flow_imp.id(163540186449900983)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Remarks'
+,p_source=>'EO_REMARKS'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_TEXTAREA'
+,p_cSize=>60
+,p_cMaxlength=>4000
+,p_cHeight=>4
+,p_label_alignment=>'RIGHT'
+,p_field_template=>2318601014859922299
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'auto_height', 'N',
+  'character_counter', 'N',
+  'resizable', 'Y',
+  'trim_spaces', 'BOTH')).to_clob
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(163542992921900987)
+,p_name=>'P31_EO_ID'
+,p_source_data_type=>'NUMBER'
+,p_is_primary_key=>true
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_imp.id(163540999368900984)
+,p_item_source_plug_id=>wwv_flow_imp.id(163540186449900983)
+,p_use_cache_before_default=>'NO'
+,p_prompt=>'Eo Id'
+,p_source=>'EO_ID'
+,p_source_type=>'REGION_SOURCE_COLUMN'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_cSize=>30
+,p_cHeight=>1
+,p_label_alignment=>'RIGHT'
+,p_field_template=>2318601014859922299
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_lov_display_extra=>'YES'
+,p_protection_level=>'S'
+,p_encrypt_session_state_yn=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'N')).to_clob
+);
+wwv_flow_imp_page.create_page_da_event(
+ p_id=>wwv_flow_imp.id(163551326640901042)
+,p_name=>'Cancel Dialog'
+,p_event_sequence=>10
+,p_triggering_element_type=>'BUTTON'
+,p_triggering_button_id=>wwv_flow_imp.id(162854211087780734)
+,p_bind_type=>'bind'
+,p_execution_type=>'IMMEDIATE'
+,p_bind_event_type=>'click'
+);
+wwv_flow_imp_page.create_page_da_action(
+ p_id=>wwv_flow_imp.id(163551859301901046)
+,p_event_id=>wwv_flow_imp.id(163551326640901042)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_DIALOG_CANCEL'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(163548506982901035)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_HEADER'
+,p_region_id=>wwv_flow_imp.id(163540186449900983)
+,p_process_type=>'NATIVE_FORM_INIT'
+,p_process_name=>'Fetch Row from ENQUIRY_OUTPUTS'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>163599656613729531
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(163548880584901038)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'test'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'declare',
+'  v_success_failure varchar2(2);',
+'  v_error_msg varchar2(4000);',
+'begin',
+'  gen_excel(:P31_ENQ_ID,v_success_failure,v_error_msg);',
+'',
+'if v_success_failure = ''99'' then',
+'apex_error.add_error (',
+'    p_message          => v_error_msg,',
+'    p_display_location => apex_error.c_inline_in_notification );',
+'end if;	',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_process_when_button_id=>wwv_flow_imp.id(163542617589900986)
+,p_internal_uid=>163600030215729534
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(163549353643901039)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'Get PK'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin ',
+'    if :P31_EO_ID is null then',
+'        select "#OWNER#"."SEQ_EO_ID".nextval',
+'          into :P31_EO_ID',
+'          from sys.dual;',
+'    end if;',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when_button_id=>wwv_flow_imp.id(163542617589900986)
+,p_process_when_type=>'NEVER'
+,p_internal_uid=>163600503274729535
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(163550511909901041)
+,p_process_sequence=>15
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_PLSQL'
+,p_process_name=>'delete'
+,p_process_sql_clob=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'begin',
+'  delete from ENQUIRY_OUTPUTS where eo_id = :P31_EO_ID;',
+'end;'))
+,p_process_clob_language=>'PLSQL'
+,p_process_error_message=>'Record cannot be deleted.'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when=>'DELETE'
+,p_process_when_type=>'REQUEST_EQUALS_CONDITION'
+,p_process_success_message=>'Record deleted successfully.'
+,p_internal_uid=>163601661540729537
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(163549718610901040)
+,p_process_sequence=>30
+,p_process_point=>'AFTER_SUBMIT'
+,p_region_id=>wwv_flow_imp.id(163540186449900983)
+,p_process_type=>'NATIVE_FORM_DML'
+,p_process_name=>'Process Row of ENQUIRY_OUTPUTS'
+,p_attribute_05=>'Y'
+,p_attribute_06=>'Y'
+,p_attribute_08=>'N'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when_button_id=>wwv_flow_imp.id(163542184600900986)
+,p_process_success_message=>'Action Processed.'
+,p_internal_uid=>163600868241729536
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(163550129633901041)
+,p_process_sequence=>40
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_SESSION_STATE'
+,p_process_name=>'reset page'
+,p_attribute_01=>'CLEAR_CACHE_FOR_ITEMS'
+,p_attribute_03=>'P31_EO_ID'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when=>'SAVE,DELETE'
+,p_process_when_type=>'REQUEST_IN_CONDITION'
+,p_internal_uid=>163601279264729537
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(163550882648901041)
+,p_process_sequence=>50
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_CLOSE_WINDOW'
+,p_process_name=>'Close Dialog'
+,p_attribute_02=>'N'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when_type=>'NEVER'
+,p_internal_uid=>163602032279729537
+,p_process_comment=>'CREATE,SAVE,DELETE'
+);
+wwv_flow_imp.component_end;
+end;
+/
